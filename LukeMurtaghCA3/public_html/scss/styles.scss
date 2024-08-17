@@ -1,0 +1,179 @@
+
+#map {
+    width: 1000px;
+    max-width: 100%; //responsive
+    height: 600px;
+    border: thin solid #ccc; //grey border
+    margin: 20px auto; // Center the map horizontally
+
+    top: 700px; // Adjust the distance from the top as needed
+    
+}
+
+
+
+
+
+
+
+body {
+  background-image: url('../images/paris background.jpg');
+  background-position: top; 
+  
+  background-repeat: no-repeat;  // prevents background image from duplicating to fill white space
+  background-color: lightgray;
+  font-family: sans-serif;
+  
+}
+
+
+.lm_container {
+  max-width: 1800px;
+  margin: auto;     /*centers the logo and buttons*/
+}
+
+
+.lm_navigation {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+
+
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul { 
+  display: inline-block; //display unordered list horizontally
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;  //no underlines
+  color: white;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+nav ul li a:hover {
+  color: lightgray;
+}
+
+
+
+
+
+.lm_home {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.lm_home h1 {
+  font-size: 70px;
+}
+
+.lm_home p {
+  font-size: 30px;
+}
+
+
+
+//advanced custom content
+#lm_customContentContainer {
+    max-width: 400px;
+    max-height: 300px;
+    border: 1px solid #000000; //Sets a border around the container with a width of 1 pixel, a solid style and makes itblack
+    display: flex;  // allows the use of align-items
+    flex-direction: column;  //got this line from chatgpt. ensures everything stacks vertically
+    align-items: center;
+
+    .lm_venueImage {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover; // the image covers the whole container
+    }
+    
+    #lm_text h3{
+        font-size: 18px; 
+        font-weight: bold; 
+        text-align: center; 
+        padding: 10px;
+    }
+    #lm_text p{
+        font-size: 11px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+}
+
+
+// list of countries
+#lm_countriesList {
+    margin-top: 800px;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+
+// route control panel
+#lm_controlPanel
+{
+    margin-bottom:50px; //space between route and currency converter
+}
+
+
+.lm_selectLocationLabel
+{
+    font-weight:bold;
+    min-width:40px;
+    display:inline-block;
+}
+
+#submit
+{
+    margin-left:50px;
+} 
+
+#directions
+{
+    width:100%;
+    margin:0px;
+    margin-top:20px;
+    margin-bottom:200px;
+}
+
+
+
+
+
+
+
+
+
+
+//put the map stuff and the currency stuff in one container so i can put one above the other
+#lm_euroContainer
+{
+    margin-top:50px;
+    display:none;
+}
+
+#lm_selectedCurrencyList
+{
+    list-style-type: none;
+}
+
+#lm_convertToEuroContainer
+{
+    display:none;
+}

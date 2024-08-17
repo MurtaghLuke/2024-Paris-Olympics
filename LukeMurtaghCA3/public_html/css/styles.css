@@ -1,0 +1,110 @@
+#map {
+  width: 1000px;
+  max-width: 100%;
+  height: 600px;
+  border: thin solid #ccc;
+  margin: 20px auto;
+  top: 700px; }
+
+body {
+  background-image: url("../images/paris background.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: lightgray;
+  font-family: sans-serif; }
+
+.lm_container {
+  max-width: 1800px;
+  margin: auto;
+  /*centers the logo and buttons*/ }
+
+.lm_navigation {
+  display: flex;
+  align-items: center;
+  padding: 20px; }
+
+nav {
+  flex: 1;
+  text-align: right; }
+
+nav ul {
+  display: inline-block; }
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px; }
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 25px; }
+
+nav ul li a:hover {
+  color: lightgray; }
+
+.lm_home {
+  text-align: center;
+  color: white;
+  font-family: sans-serif; }
+
+.lm_home h1 {
+  font-size: 70px; }
+
+.lm_home p {
+  font-size: 30px; }
+
+#lm_customContentContainer {
+  max-width: 400px;
+  max-height: 300px;
+  border: 1px solid #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #lm_customContentContainer .lm_venueImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; }
+  #lm_customContentContainer #lm_text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px; }
+  #lm_customContentContainer #lm_text p {
+    font-size: 11px;
+    text-align: center;
+    padding: 10px; }
+
+#lm_countriesList {
+  margin-top: 800px;
+  padding: 10px;
+  background-color: #f1f1f1; }
+
+#lm_controlPanel {
+  margin-bottom: 50px; }
+
+.lm_selectLocationLabel {
+  font-weight: bold;
+  min-width: 40px;
+  display: inline-block; }
+
+#submit {
+  margin-left: 50px; }
+
+#directions {
+  width: 100%;
+  margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 200px; }
+
+#lm_euroContainer {
+  margin-top: 50px;
+  display: none; }
+
+#lm_selectedCurrencyList {
+  list-style-type: none; }
+
+#lm_convertToEuroContainer {
+  display: none; }
+
+/*# sourceMappingURL=styles.css.map */

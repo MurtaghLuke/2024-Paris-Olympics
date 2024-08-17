@@ -1,0 +1,151 @@
+<!--reference:  https://derek.comp.dkit.ie/google_maps/examples/places_service_search_nearby.html-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2024 Paris Olympics Guide</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <script src="sw_offline_first.js" type="text/javascript"></script>
+        <link rel="icon" href="icons/icon-192x192.png" type="image/png">
+        
+        <!--react-->
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<!--        //progressive web app-->
+        <link rel="manifest" href="json/manifest.json">
+         ios support         
+        <link rel="icon" href="icons/icon-192x192.png" type="image/png">
+        <link rel="apple-touch-icon" href="icons/icon-256x256.png">   
+        <meta name="msapplication-TileImage" content="icons/icon-384x384.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="theme-color" content="white">  
+        <meta name="apple-mobile-web-app-capable" content="yes">  
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <meta name="apple-mobile-web-app-title" content="Offline First Example">
+        
+<!--        service worker-->
+        <script>
+            window.addEventListener('load', () =>
+            {
+                if ("serviceWorker" in navigator)
+                {
+                    navigator.serviceWorker.register("sw_offline_first.js");
+                }
+            });
+        </script>
+    </head>
+    
+
+    <body>
+        
+        <div class="lm_container">
+            <div class="lm_navigation">
+             <div class="lm_logo">
+                 <img src="images/olympics logo white.jpg" alt=""/>
+             </div>
+             <nav>
+                <ul>                   
+                    <li><a href="https://en.wikipedia.org/wiki/2024_Summer_Olympics" target="_blank">Wiki</a></li>
+                    <li><a href="https://twitter.com/Paris2024?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a></li>
+                    
+                </ul>
+             </nav>
+            </div> 
+        </div>
+        
+        
+        
+        
+        <div class="lm_home">
+            <h1> <em> Your Guide to the 2024 Paris Olympics </em> </h1>   
+            <h2> <em> Scroll for more info! </em> </h2> 
+        </div> 
+        
+        
+        
+        
+
+        <div class="lm_mapAndCurrencySection">
+            <div id=map>
+                <script src="map.js" type="text/javascript"></script>
+                <script src="hidePoi.js" type="text/javascript"></script>
+                <script src="hotels.js" type="text/javascript"></script>
+                <script src="pubs.js" type="text/javascript"></script>
+                <script src="route.js" type="text/javascript"></script>
+            </div>
+            <!--        //map route-->
+            <div id=lm_controlPanel>
+                <span class=lm_selectLocationLabel>A. Start</span>
+                <input id=start type=text><br>
+
+                <br>
+                <span class=lm_selectLocationLabel>B. End</span>
+                <input id=end type=text>
+
+                <input type=button onclick=calculateRoute() id=submit value=Submit>
+            </div>
+            <div>
+                <button><i class=lm_materialIcons onclick=calculateRoute("DRIVING")>Car</i></button>
+                <button><i class=lm_materialIcons onclick=calculateRoute("TRANSIT")>Bus</i></button>
+                <button><i class=lm_materialIcons onclick=calculateRoute("BICYCLING")>Bike</i></button>
+                <button><i class=lm_materialIcons onclick=calculateRoute("WALKING")>Walk</i></button>
+            </div>
+            <h1 id=transport-mode>Driving</h1>
+            <details id=directions><summary>Directions</summary></details>
+
+
+
+
+
+            
+            <div class="lm_currencyConverterContainer">
+
+                <script src="CurrencyConverter.js" type="text/javascript"></script>
+                <label>Select Currency to Convert to Euro:</label>
+                <div id="lm_currenciesListContainer"></div>
+                <div id="lm_convertToEuroContainer">
+                    <label id="lm_selectedCurrencyDescription"></label><input type="number" id="lm_currencyToConvertFromAmount" onkeyup="document.getElementById('euroContainer').style.display = 'none'"/> 
+                    <input type="button" value="Convert to Euro" onclick="convertIntoEuro()"/>
+                </div>
+                <div id="lm_euroContainer">
+                    <label>Euro: </label>
+                    <input type="text" readonly id="euro"/>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        
+        
+
+        
+        
+
+
+        
+        
+<!--        olympic flags api-->
+<!--        only listing countries in the 2024 olympics -->
+<!--        https://flagsapi.com/#sizes-->
+
+<!--        // olympicFlags.js-->
+        <div id="lm_countriesList"></div>    
+
+        <div id="lm_flagContainer">    
+            <div id="lm_countryName"></div>
+            <img id="lm_flag" onerror="this.src='"/>
+        </div>
+        <script src="olympicFlags.js" type="text/javascript"></script>
+        
+        <script src=https://maps.googleapis.com/maps/api/js?key=AIzaSyD18upDffGZfZcozMXKXFnZu4p_B81lUfg&loading=async&callback=loadMap&libraries=marker,places></script>       		
+
+        
+
+    </body>
+</html>

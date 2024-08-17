@@ -1,0 +1,88 @@
+[
+    {
+        "name": "Stade de France",
+        "latitude": 48.9245,
+        "longitude": 2.3601,
+        "image_url": "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w730/f_auto/primary/i1naqsyg7mz34coh7jyu",
+        "sports": "Athletics and Rugby 7s"
+    },
+    {
+        "name": "Olympic Aquatics Centre",
+        "latitude": 48.9237,
+        "longitude": 2.3554,
+        "image_url": "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/v1712326112/primary/ji9pmvavpyqi6g984c8x",
+        "sports": "Artistic Swimming, Diving and Water Polo"
+
+    },
+    {
+        "name": "Marie Paradis gymnasium",
+        "latitude": 48.9382,
+        "longitude": 2.4197,
+        "image_url": "https://archi5.fr/wp-content/uploads/2021/01/LeBourget-ComplexeMultisports-VueGenerale2-V2-Thumbs.jpg",
+        "sports": "Rock Climbing"
+
+    },
+    {
+        "name": "Accor Arena",
+        "latitude": 48.8389,
+        "longitude": 2.3785,
+        "image_url": "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/bx20ndrnvlssfiocnw6e",
+        "sports": "Basketball and Gymnastics"
+
+    },
+    {
+        "name": "Champ de Mars",
+        "latitude": 48.8559,
+        "longitude": 2.2984,
+        "image_url": "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/i70myvzy7xdcvzix0qpt",
+        "sports": "Judo and Wrestling"
+
+    },
+    {
+        "name": "Grand Palais",
+        "latitude": 48.8672,
+        "longitude": 2.3175,
+        "image_url": "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/isejdmd8ox6attvfqjkg",
+        "sports": "Fencing and Taekwondo"
+
+    },
+    {
+        "name": "Parc des Princes",
+        "latitude": 48.8415,
+        "longitude": 2.2534,
+        "image_url": "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/vgwvwnncpkbz1pwlpx73",
+        "sports": "Football"
+
+    },
+    {
+        "name": "Roland Garros Stadium",
+        "latitude": 48.847,
+        "longitude": 2.2504,
+        "image_url": "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/oyroczfbfrehrdt6oiq1",
+        "sports": "Tennis and Boxing"
+
+    },
+    {
+        "name": "Pont Alexandre III",
+        "latitude": 48.864,
+        "longitude": 2.3136,
+        "image_url": "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/yhjrtevgfd8fac6blbau",
+        "sports": "Triathlon and Cycling"
+
+    },
+    {
+        "name": "Porte de la Chappelle Arena",
+        "latitude": 48.8993,
+        "longitude": 2.3609,
+        "image_url": "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/dhkind8lbuoz8rsmg6u8",
+        "sports": "Badminton and Gymnastics"
+    },
+    {
+        "name": "Place de la Concorde",
+        "latitude": 48.8657,
+        "longitude": 2.3212,
+        "image_url": "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/dkysx7e06ynhwfb3v0w9",
+        "sports": "3x3 Basketball, Skateboarding and BMX"
+
+    }
+]
